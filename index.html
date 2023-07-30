@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="switch">
+      <h3>Simple Night/Light Mode</h3>
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+      </label>
+    </div>
+    <div class="containers">
+      <div class="container">
+        <h1>Radio Station Website</h1>
+
+        <div id="radio-controls">
+          <input type="text" id="search-input" placeholder="Search" />
+          <select id="station-select">
+            <option value="">Select a Station</option>
+            <option value="last-listened">Last Listened</option>
+            <option value="most-popular">Most Popular</option>
+          </select>
+          <div class="volume-container">
+            <input
+              type="range"
+              id="volume-control"
+              min="0"
+              max="10"
+              step="0.1"
+              value="5"
+            />
+            <div class="speaker-icon"></div>
+          </div>
+          <button id="play-pause-btn">Play</button>
+        </div>
+        <div class="info">
+          <hr class="line" />
+          <h3 class="text-title">
+            Important Information Regarding Radio Stations
+          </h3>
+          <p class="text-info">
+        Due to some changes with some radio stations causes some to not work properly. If you encounter any problems regarding no audio it may be due to this
+          </p>
+        </div>
+
+        <audio id="audio-player" preload="auto"></audio>
+      </div>
+
+      <div class="featured">
+        <h2 class="featured-title">Featured Stations</h2>
+        <div class="box">
+          <img src="./stations logo/NRJ.png" alt="test" class="station-img" />
+          <p>NRJ - Norway</p>
+          <button class="btn-play NRJ-NO" data-station="NRJ-NO">Play Now</button>
+        </div>
+        <div class="box f1">
+          <img src="./stations logo/NRJ.png" alt="test" class="station-img" />
+          <p>NRJ - Sweden</p>
+          <button class="btn-play NRJ-SWE" data-station="NRJ-SWE">Play Now</button>
+        </div>
+        <div class="box f2">
+          <img src="./stations logo/NRJ.png" alt="test" class="station-img" />
+          <p>P4 Lyden Av Norge</p>
+          <button class="btn-play" data-station="P4Lyden">Play Now</button>
+        </div>
+        <div class="box f3">
+          <img src="" alt="test" class="station-img" />
+          <p>BBC Radio 1</p>
+          <button class="btn-play" data-station="BBCR1">Play Now</button>
+        </div>
+        <div class="box f4">
+          <img src="" alt="test" class="station-img" />
+          <p>coming soon</p>
+          <button class="btn-play">Play Now</button>
+        </div>
+        <div class="box f5">
+          <img src="" alt="test" class="station-img" />
+          <p>coming soon</p>
+          <button class="btn-play">Play Now</button>
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
